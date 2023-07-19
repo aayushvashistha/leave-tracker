@@ -12,6 +12,7 @@ class RequestListCreateView(generics.ListCreateAPIView):
     serializer_class = RequestSerializer
 
     def perform_create(self, serializer):
+        
         serializer.save()
 
 class RequestRetrieveUpdateDestroyView(generics.RetrieveUpdateDestroyAPIView):
